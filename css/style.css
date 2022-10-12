@@ -1,3 +1,168 @@
+/* Alexander Rozhkov, frontend developer.
+   12.10.2022
+   alexrozhkov.com
+*/
+/* colors */
+:root {
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-text-title: #252b42;
+  --color-text: ##737373;
+}
+/* base setup */
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: var(--color-black);
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+html,
 body {
-  background: #434325;
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  scroll-behavior: smooth;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  height: 100%;
+  font-size: 14px;
+  line-height: 1;
+  font-family: Montserrat; /* по умолчанию */
+  color: var(--color-text-title);
+  font-weight: 500;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+body._lock {
+  overflow: hidden;
+}
+/* ----------------------------- */
+.wrapper {
+  min-width: 100%;
+  overflow: hidden;
+}
+._container {
+  max-width: 1046px;
+  padding: 0 15px;
+  margin: 0 auto;
+  box-sizing: content-box;
+}
+/* ----------------------------- */
+.header {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 50;
+}
+.header__container {
+  display: flex;
+  min-height: 104px;
+  align-items: center;
+}
+.header__logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: inherit;
+}
+.header__menu {
+  margin: 0px 0px 0px 133px;
+}
+.menu {
+  padding: 5px 0px;
+}
+.menu__list {
+  flex-wrap: wrap;
+  display: flex;
+}
+.menu__item {
+}
+.menu__item:not(:last-child) {
+  margin: 0px 21px 0px 0px;
+}
+.menu__link {
+  color: var(--color-text);
+  font-weight: 600;
+  line-height: calc(24 / 14 * 100%);
+}
+@media (max-width: 992px) {
+  .header__menu {
+    margin: 0px 0px 0px 80px;
+  }
+}
+@media (max-width: 767px) {
+  .header__menu {
+    margin: 0px 0px 0px 40px;
+  }
+}
+@media (max-width: 479px) {
+  .header__container {
+    min-height: 70px;
+  }
+  .header__menu {
+    margin: 0px 0px 0px 20px;
+  }
+  .menu__link {
+    font-size: 14px;
+  }
 }
