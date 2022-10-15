@@ -1,105 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700,800&display=swap&subset=cyrillic-ext"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/normalize.css" />
-    <title>alexrozhkov.com</title>
-  </head>
 
-  <body>
-    <div class="wrapper">
-      <header class="header">
-        <div class="progress-container">
-          <div class="progress-bar" id="myBar"></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+    href="https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700,800&display=swap&subset=cyrillic-ext"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/normalize.css" />
+  <title>alexrozhkov.com</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+      </div>
+
+      <div id="header__container" class="_container">
+        <a title="На самый верх" data-goto=".page__main-block" href="#" class="header__logo">Релвис</a>
+
+        <div class="header__menu menu">
+          <div class="menu__icon"><span></span></div>
         </div>
 
-        <div id="header__container" class="_container">
-          <a
-            title="На самый верх"
-            data-goto=".page__main-block"
-            href="#"
-            class="header__logo"
-            >Релвис</a
-          >
+        <nav class="menu__body">
+          <ul class="menu__list">
+            <li>
+              <a title="На самый верх" data-goto=".page__main-block" href="#" class="menu__link">Главная</a>
+            </li>
+            <li>
+              <a data-goto=".two" href="#" class="menu__link">Продукт</a>
+            </li>
+            <li>
+              <a data-goto=".three" href="#" class="menu__link">Стоимость</a>
+            </li>
+            <li>
+              <a data-goto=".footer" href="" class="menu__link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-          <div class="header__menu menu">
-            <div class="menu__icon"><span></span></div>
-          </div>
+    <main class="page">
+      <div class="page__main-block main-block">
+        <div class="main-block__container _container">
+          <div class="main-block__body">
+            <h1 class="main-block__title">
+              Финансово Консалтинговое Решение
+            </h1>
 
-          <nav class="menu__body">
-            <ul class="menu__list">
-              <li>
-                <a
-                  title="На самый верх"
-                  data-goto=".page__main-block"
-                  href="#"
-                  class="menu__link"
-                  >Главная</a
-                >
-              </li>
-              <li>
-                <a data-goto=".two" href="#" class="menu__link">Продукт</a>
-              </li>
-              <li>
-                <a data-goto=".three" href="#" class="menu__link">Стоимость</a>
-              </li>
-              <li>
-                <a data-goto=".footer" href="" class="menu__link">Контакты</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </header>
+            <div class="main-block__text">
+              Осуществим вашу мечту создать прибыльное дело, применяя
+              комплексный подход.
+            </div>
 
-      <main class="page">
-        <div class="page__main-block main-block">
-          <div class="main-block__container _container">
-            <div class="main-block__body">
-              <h1 class="main-block__title">
-                Финансово Консалтинговое Решение
-              </h1>
-
-              <div class="main-block__text">
-                Осуществим вашу мечту создать прибыльное дело, применяя
-                комплексный подход, используя все инструменты аналитики,
-                консалтинга, маркетинга.
-              </div>
-
-              <div class="main-block__buttons">
-                <a
-                  title="Обсудить проект"
-                  href="#"
-                  class="main-block__button main-block__button_orange"
-                  >Обсудить проект</a
-                >
-                <a
-                  title="Подробней"
-                  href="#"
-                  class="main-block__button main-block__button_border"
-                  >Подробней</a
-                >
-              </div>
+            <div class="main-block__buttons">
+              <a title="Обсудить проект" href="#" class="main-block__button main-block__button_orange">Обсудить
+                проект</a>
+              <a title="Подробней" href="#" class="main-block__button main-block__button_border">Подробней</a>
             </div>
           </div>
-
-          <div class="main-block__image _ibg">
-            <img src="./img/mainblock/cover.jpg" alt="cover" />
-          </div>
         </div>
+        <div class="main-block__image _ibg">
+          <img src="./img/mainblock/cover.jpg" alt="cover" />
+        </div>
+      </div>
 
-        <section class="one"></section>
-      </main>
+      <section class="page__services services">
+        <div class="services__container _container">
 
-      <footer class="footer"></footer>
-    </div>
+          <div class="services__body">
 
-    <script src="./js/script.js"></script>
-  </body>
+            <div class="services__column">
+              <div class="services__item item-service">
+                <div class="item-service__icon">
+                  <img src="./img/services/01.svg" alt="service">
+                </div>
+                <h3 class="item-service__title">Мы всегда помним
+                  о Вас</h3>
+                <div class="item-service__text">Вы не упустите срок окончания
+                  оценки, мы напомним Вам.</div>
+              </div>
+            </div>
+
+            <div class="services__column">
+              <div class="services__item item-service">
+                <div class="item-service__icon">
+                  <img src="./img/services/02.svg" alt="service">
+                </div>
+                <h3 class="item-service__title">Оценочная
+                  организация №1 </h3>
+                <div class="item-service__text">Вы работаете с профессионалами
+                  своего дела.</div>
+              </div>
+            </div>
+
+            <div class="services__column">
+              <div class="services__item item-service item-service_green">
+                <div class="item-service__icon">
+                  <img src="./img/services/03.svg" alt="service">
+                </div>
+                <h3 class="item-service__title">Продадим то, что
+                  не продаётся</h3>
+                <div class="item-service__text">Мы продаем любое имущество
+                  частных и государственных лиц.</div>
+              </div>
+            </div>
+
+
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer"></footer>
+  </div>
+
+  <script src="./js/script.js"></script>
+</body>
+
 </html>

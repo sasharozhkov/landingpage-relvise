@@ -132,8 +132,9 @@ body._lock {
 }
 /* ----------------------------- */
 .active {
-  background: rgba(255, 255, 255, 0.7);
+  background: #ffffff;
   transition: all 0.5s;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.03);
 }
 /* ----------------------------- */
 #header__container {
@@ -306,6 +307,11 @@ body._touch .menu__link {
 }
 .page__main-block {
 }
+.page__services {
+  position: relative;
+  z-index: 2;
+  margin: -111px 0px 0px 0px;
+}
 /* ----------------------------- */
 .main-block {
   position: relative;
@@ -399,6 +405,9 @@ body._touch .menu__link {
   }
 }
 @media (max-width: 479px) {
+  .main-block__body {
+    padding: 115px 0px 160px 0px;
+  }
   .main-block__button {
     flex: 1 1 100%;
     transition: 0.5s;
@@ -419,6 +428,81 @@ body._touch .menu__link {
   }
 }
 
+/* ----------------------------- */
+.services {
+}
+.services__container {
+}
+.services__body {
+}
+.services__column {
+  flex: 0 1 33.333%;
+}
+
+.services__item {
+  height: 100%;
+  background: #ffffff;
+  box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+  padding: 35px;
+}
+.item-service {
+}
+.item-service_green {
+  background-color: #0d5c63;
+}
+.item-service_green .item-service__title {
+  color: #ffffff;
+}
+.item-service_green .item-service__text {
+  color: #ffffff;
+}
+.item-service > *:not(:last-child) {
+  margin: 0px 0px 10px 0px;
+}
+.item-service__icon {
+}
+.item-service__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 133%;
+  letter-spacing: 0.1px;
+  color: #252b42;
+}
+.item-service__text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 143%;
+  letter-spacing: 0.2px;
+  color: #737373;
+}
+@media (max-width: 992px) {
+  .services__column {
+    flex: 0 1 50%;
+    transition: 0.5s;
+  }
+  .services__column:not(:last-child) {
+    margin: 0px 0px 30px 0px;
+  }
+  .services__column:last-child {
+    flex: 0 1 100%;
+  }
+}
+@media (min-width: 670px) {
+  .services__body {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px -15px;
+  }
+  .services__column {
+    padding: 0px 15px;
+  }
+}
+@media (max-width: 479px) {
+  .services__item {
+    padding: 25px;
+    transition: 0.5s;
+  }
+}
 /* border*/
 /* outline: 1px dashed #0011ff;
   outline-offset: -1px; */
