@@ -30,10 +30,10 @@
               <a title="На самый верх" data-goto=".page__main-block" href="#" class="menu__link">Главная</a>
             </li>
             <li>
-              <a data-goto=".two" href="#" class="menu__link">Продукт</a>
+              <a data-goto=".page__practice" href="#" class="menu__link">О нас</a>
             </li>
             <li>
-              <a data-goto=".three" href="#" class="menu__link">Стоимость</a>
+              <a data-goto=".page__whoweare" href="#" class="menu__link">Услуги</a>
             </li>
             <li>
               <a data-goto=".footer" href="" class="menu__link">Контакты</a>
@@ -54,9 +54,9 @@
               комплексный подход.
             </div>
             <div class="main-block__buttons">
-              <a title="Обсудить проект" href="#" class="main-block__button main-block__button_orange">Обсудить
+              <a title="Обсудить проект" href="#project" class="main-block__button main-block__button_orange">Обсудить
                 проект</a>
-              <a title="Подробней" href="#" class="main-block__button main-block__button_border">Подробней</a>
+              <a title="Подробней" href="#detailed" class="main-block__button main-block__button_border">Подробней</a>
             </div>
           </div>
         </div>
@@ -103,7 +103,7 @@
           </div>
         </div>
       </section>
-      <section class="page__advantages advantages">
+      <section id="detailed" class="page__advantages advantages">
         <div class="advantages__container _container">
           <div class="advantages__header header-block">
             <h2 class="header-block__title">Оценка бизнеса, компании, предприятия</h2>
@@ -295,7 +295,7 @@
           </div>
         </div>
       </section>
-      <section class="page__getintouch getintouch">
+      <section id="project" class="page__getintouch getintouch">
         <div class="getintouch__container _container">
           <div class="getintouch__header header-block">
             <h2 class="header-block__title">Связаться с нами</h2>
@@ -351,7 +351,87 @@
         </div>
       </section>
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="footer__top">
+        <div class="footer__main _container">
+          <div class="footer__row">
+            <div class="footer__column">
+              <div class="footer__label">О компании</div>
+              <nav class="footer__menu menu-footer">
+                <ul class="menu-footer__list">
+                  <li class="menu-footer__item"><a href="" class="menu-footer__link">О нас</a></li>
+                  <li class="menu-footer__item"><a href="" class="menu-footer__link">Карьера</a></li>
+                  <li class="menu-footer__item"><a href="" class="menu-footer__link">Мы нанимаем</a></li>
+                  <li class="menu-footer__item"><a href="" class="menu-footer__link">Блог</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="footer__column">
+              <div class="footer__label">Услуги</div>
+              <nav class="footer__menu menu-footer">
+                <ul class="menu-footer__list">
+                  <li class="menu-footer__item"><a href="" class="menu-footer__link">Адм. отдел</a></li>
+                  <li class="menu-footer__item"><a href="" class="menu-footer__link">Оценки имущеста</a></li>
+                  <li class="menu-footer__item"><a href="" class="menu-footer__link">Юр. направление</a></li>
+                  <li class="menu-footer__item"><a href="" class="menu-footer__link">Бизнес-план</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="footer__column">
+              <div class="footer__label">Особенности</div>
+              <nav class="footer__menu menu-footer">
+                <ul class="menu-footer__list">
+                  <li class="menu-footer__item"><a href="" class="menu-footer__link">Бизнес-маркетинг</a></li>
+                  <li class="menu-footer__item"><a href="" class="menu-footer__link">Аналитика</a></li>
+                  <li class="menu-footer__item"><a href="" class="menu-footer__link">Живой чат</a></li>
+                  <li class="menu-footer__item"><a href="" class="menu-footer__link">Поддержка</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="footer__column">
+              <div class="footer__label">Ресурсы</div>
+              <nav class="footer__menu menu-footer">
+                <ul class="menu-footer__list">
+                  <li class="menu-footer__item"><a href="" class="menu-footer__link">IOS & Android</a></li>
+                  <li class="menu-footer__item"><a href="" class="menu-footer__link">Посмотреть демо</a></li>
+                  <li class="menu-footer__item"><a href="" class="menu-footer__link">Клиенты</a></li>
+                  <li class="menu-footer__item"><a href="" class="menu-footer__link">API</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="footer__column">
+              <div class="footer__label">Связаться</div>
+              <div class="footer__contacts contacts-footer">
+                <a href="#" class="contacts-footer__item contacts-footer__item_phone">(888) 888-88-00</a>
+                <a href="#" class="contacts-footer__item contacts-footer__item_map">Минск, улица Мележа 5</a>
+                <a href="#" class="contacts-footer__item contacts-footer__item_email">relvice@telegram.com</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="footer__container _container">
+          <div class="footer__copy footer__copy_logo"><a href="https://alexrozhkov.com/" target="_blank"
+              class="footer__copy-text">Сделано с любовью от</a>
+          </div>
+          <div class="footer__social social">
+            <a href="#" class="social__item">
+              <img src="./img/footer/social/01.svg" alt="facebook">
+            </a>
+            <a href="#" class="social__item">
+              <img src="./img/footer/social/02.svg" alt="instagram">
+            </a>
+            <a href="#" class="social__item">
+              <img src="./img/footer/social/03.svg" alt="twitter">
+            </a>
+            <a href="#" class="social__item">
+              <img src="./img/footer/social/04.svg" alt="youtube">
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </div>
   <script src="./js/script.js"></script>
 </body>
