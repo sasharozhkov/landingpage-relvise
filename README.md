@@ -1,1 +1,1 @@
-https://sasharozhkov.github.io/landingpage-relvise/
+https://sasharozhkov.github.io/landingpage-relvise
